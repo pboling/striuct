@@ -123,7 +123,7 @@ RubyのStructを愛しつつも、こういった部分をなんとかしたい�
     
     user3 = User3.new
     user3.lank #=> 3
-    
+
 * 「意図的にnilを定義する」事もありますよね
   初期nilとの判別用メソッドを追加しました。
    
@@ -131,6 +131,33 @@ RubyのStructを愛しつつも、こういった部分をなんとかしたい�
    user3.assign? :name #=> false
    user3.name = nil
    user3.assign? :name #=> true
+
+* Structはこんな感じで、ノーガード上書き＆メソッド定義出来ない物も無警告で進みます
+    NoGuard = Struct.new :__send__, :'?  !'
+    noguard = NoGuard.new false
+    p noguard.__send__
+    p noguard.methods.include?(:'?  !') # lost!!
+
+* ということで、意図しない上書き等を防ぐために安全度を設定出来るようにしました。
+  標準値は上から2番目です。
+    class SafetyNaming < Striuct.new
+      begin
+        member :__send__
+      rescue
+        p $!
+      end
+      
+      begin
+        member :'?  !'
+      rescue
+        p $!
+      end
+      
+      # ここで下げると、定義可能に
+      protect_level :struct
+      
+      member :__send__, :'?  !'
+    end
 
 * Structの良さは無くしたくないですよね
     Sth1 = Striuct.new :id, :last_name, :family_name, :address, :age
