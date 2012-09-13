@@ -80,7 +80,7 @@
   
     <dt class="r1 last">Defined in:</dt>
     <dd class="r1 last">lib/striuct/classmethods/fix.rb<span class="defines">,<br />
-  lib/striuct/classmethods/copy.rb,<br /> lib/striuct/classmethods/enum.rb,<br /> lib/striuct/classmethods/named.rb,<br /> lib/striuct/classmethods/macro.rb,<br /> lib/striuct/classmethods/hashy.rb,<br /> lib/striuct/classmethods/length.rb,<br /> lib/striuct/classmethods/default.rb,<br /> lib/striuct/classmethods/to_struct.rb,<br /> lib/striuct/classmethods/adjustment.rb,<br /> lib/striuct/classmethods/validation.rb,<br /> lib/striuct/classmethods/constructor.rb,<br /> lib/striuct/classmethods/prevent_conflicts.rb</span>
+  lib/striuct/classmethods/copy.rb,<br /> lib/striuct/classmethods/enum.rb,<br /> lib/striuct/classmethods/macro.rb,<br /> lib/striuct/classmethods/hashy.rb,<br /> lib/striuct/classmethods/named.rb,<br /> lib/striuct/classmethods/length.rb,<br /> lib/striuct/classmethods/default.rb,<br /> lib/striuct/classmethods/to_struct.rb,<br /> lib/striuct/classmethods/validation.rb,<br /> lib/striuct/classmethods/adjustment.rb,<br /> lib/striuct/classmethods/constructor.rb,<br /> lib/striuct/classmethods/prevent_conflicts.rb</span>
 </dd>
   
 </dl>
@@ -397,6 +397,162 @@
     </ul>
   
     <h2>
+      Macro for Member Definition
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="private ">
+  <span class="summary_signature">
+    
+      <a href="#add_member-instance_method" title="#add_member (instance method)">- (nil) <strong>add_member</strong>(autonym, condition = Validation::Condition::ANYTHING, options = DEFAULT_MEMBER_OPTIONS, &amp;adjuster) </a>
+    
+
+    
+      (also: #member)
+    
+  </span>
+  
+  
+  
+  <span class="note title private">private</span>
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="private ">
+  <span class="summary_signature">
+    
+      <a href="#add_members-instance_method" title="#add_members (instance method)">- (nil) <strong>add_members</strong>(autonym, *autonyms) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  <span class="note title private">private</span>
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="private ">
+  <span class="summary_signature">
+    
+      <a href="#alias_member-instance_method" title="#alias_member (instance method)">- (nil) <strong>alias_member</strong>(aliased, autonym) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  <span class="note title private">private</span>
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="private ">
+  <span class="summary_signature">
+    
+      <a href="#set_default_value-instance_method" title="#set_default_value (instance method)">- (nil) <strong>set_default_value</strong>(name, value = nil, &amp;block) </a>
+    
+
+    
+      (also: #default)
+    
+  </span>
+  
+  
+  
+  <span class="note title private">private</span>
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+    </ul>
+  
+    <h2>
+      Like Ruby's Hash
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#has_key%3F-instance_method" title="#has_key? (instance method)">- (Object) <strong>has_key?</strong> </a>
+    
+
+    
+      (also: #key?)
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#keys-instance_method" title="#keys (instance method)">- (Object) <strong>keys</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+    </ul>
+  
+    <h2>
       Named
       <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
     </h2>
@@ -572,7 +728,7 @@
     
 
     
-      (also: #names, #members, #keys)
+      (also: #names, #members)
     
   </span>
   
@@ -666,114 +822,13 @@
     
 
     
-      (also: #member?, #has_key?)
+      (also: #member?)
     
   </span>
   
   
   
   
-  
-  
-  
-
-  
-    <span class="summary_desc"><div class='inline'></div></span>
-  
-</li>
-
-      
-    </ul>
-  
-    <h2>
-      Macro for Member Definition
-      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
-    </h2>
-
-    <ul class="summary">
-      
-        <li class="private ">
-  <span class="summary_signature">
-    
-      <a href="#add_member-instance_method" title="#add_member (instance method)">- (nil) <strong>add_member</strong>(autonym, condition = Validation::Condition::ANYTHING, options = DEFAULT_MEMBER_OPTIONS, &amp;adjuster) </a>
-    
-
-    
-      (also: #member)
-    
-  </span>
-  
-  
-  
-  <span class="note title private">private</span>
-  
-  
-  
-
-  
-    <span class="summary_desc"><div class='inline'></div></span>
-  
-</li>
-
-      
-        <li class="private ">
-  <span class="summary_signature">
-    
-      <a href="#add_members-instance_method" title="#add_members (instance method)">- (nil) <strong>add_members</strong>(autonym, *autonyms) </a>
-    
-
-    
-  </span>
-  
-  
-  
-  <span class="note title private">private</span>
-  
-  
-  
-
-  
-    <span class="summary_desc"><div class='inline'></div></span>
-  
-</li>
-
-      
-        <li class="private ">
-  <span class="summary_signature">
-    
-      <a href="#alias_member-instance_method" title="#alias_member (instance method)">- (nil) <strong>alias_member</strong>(aliased, autonym) </a>
-    
-
-    
-  </span>
-  
-  
-  
-  <span class="note title private">private</span>
-  
-  
-  
-
-  
-    <span class="summary_desc"><div class='inline'></div></span>
-  
-</li>
-
-      
-        <li class="private ">
-  <span class="summary_signature">
-    
-      <a href="#set_default_value-instance_method" title="#set_default_value (instance method)">- (nil) <strong>set_default_value</strong>(name, value = nil, &amp;block) </a>
-    
-
-    
-      (also: #default)
-    
-  </span>
-  
-  
-  
-  <span class="note title private">private</span>
   
   
   
@@ -930,63 +985,6 @@
     </ul>
   
     <h2>
-      Adjuster
-      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
-    </h2>
-
-    <ul class="summary">
-      
-        <li class="public ">
-  <span class="summary_signature">
-    
-      <a href="#adjuster_for-instance_method" title="#adjuster_for (instance method)">- (Object) <strong>adjuster_for</strong>(name) </a>
-    
-
-    
-      (also: #flavor_for)
-    
-  </span>
-  
-  
-  
-  
-  
-  
-  
-
-  
-    <span class="summary_desc"><div class='inline'></div></span>
-  
-</li>
-
-      
-        <li class="public ">
-  <span class="summary_signature">
-    
-      <a href="#has_adjuster%3F-instance_method" title="#has_adjuster? (instance method)">- (Boolean) <strong>has_adjuster?</strong>(name) </a>
-    
-
-    
-      (also: #has_flavor?)
-    
-  </span>
-  
-  
-  
-  
-  
-  
-  
-
-  
-    <span class="summary_desc"><div class='inline'></div></span>
-  
-</li>
-
-      
-    </ul>
-  
-    <h2>
       Validation
       <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
     </h2>
@@ -1097,6 +1095,63 @@
 
     
       (also: #safety_writer?)
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+    </ul>
+  
+    <h2>
+      Adjuster
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#adjuster_for-instance_method" title="#adjuster_for (instance method)">- (Object) <strong>adjuster_for</strong>(name) </a>
+    
+
+    
+      (also: #flavor_for)
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#has_adjuster%3F-instance_method" title="#has_adjuster? (instance method)">- (Boolean) <strong>has_adjuster?</strong>(name) </a>
+    
+
+    
+      (also: #has_flavor?)
     
   </span>
   
@@ -2562,7 +2617,7 @@
 
   
     <span class="aliases">Also known as:
-    <span class="names"><span id='names-instance_method'>names</span>, <span id='members-instance_method'>members</span>, <span id='keys-instance_method'>keys</span></span>
+    <span class="names"><span id='names-instance_method'>names</span>, <span id='members-instance_method'>members</span></span>
     </span>
   
 
@@ -4316,6 +4371,36 @@
 </div>
     
       <div class="method_details ">
+  <h3 class="signature " id="has_key?-instance_method">
+  
+    - (<tt>Object</tt>) <strong>has_key?</strong> 
+  
+
+  
+    <span class="aliases">Also known as:
+    <span class="names"><span id='key?-instance_method'>key?</span></span>
+    </span>
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+9</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/striuct/classmethods/hashy.rb', line 9</span>
+
+<span class='id identifier rubyid_alias_method'>alias_method</span> <span class='symbol'>:has_key?</span><span class='comma'>,</span> <span class='symbol'>:has_member?</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
   <h3 class="signature " id="has_member?-instance_method">
   
     - (<tt>Boolean</tt>) <strong>has_member?</strong>(name) 
@@ -4323,7 +4408,7 @@
 
   
     <span class="aliases">Also known as:
-    <span class="names"><span id='member?-instance_method'>member?</span>, <span id='has_key?-instance_method'>has_key?</span></span>
+    <span class="names"><span id='member?-instance_method'>member?</span></span>
     </span>
   
 
@@ -4539,6 +4624,32 @@
   <span class='ivar'>@attributes</span> <span class='op'>=</span> <span class='ivar'>@attributes</span><span class='period'>.</span><span class='id identifier rubyid_deep_dup'>deep_dup</span>
   <span class='id identifier rubyid_ret'>ret</span>
 <span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="keys-instance_method">
+  
+    - (<tt>Object</tt>) <strong>keys</strong> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+8</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/striuct/classmethods/hashy.rb', line 8</span>
+
+<span class='id identifier rubyid_alias_method'>alias_method</span> <span class='symbol'>:keys</span><span class='comma'>,</span> <span class='symbol'>:autonyms</span></pre>
     </td>
   </tr>
 </table>
@@ -5020,7 +5131,7 @@
 </div>
 
     <div id="footer">
-  Generated on Wed Sep 12 10:40:50 2012 by
+  Generated on Fri Sep 14 07:09:12 2012 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.8.2.1 (ruby-1.9.3).
 </div>
