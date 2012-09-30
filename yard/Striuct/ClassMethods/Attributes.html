@@ -4,26 +4,26 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>
-  Class: Striuct::Attributes
+  Class: Striuct::ClassMethods::Attributes
   
     &mdash; Documentation by YARD 0.8.2.1
   
 </title>
 
-  <link rel="stylesheet" href="../css/style.css" type="text/css" media="screen" charset="utf-8" />
+  <link rel="stylesheet" href="../../css/style.css" type="text/css" media="screen" charset="utf-8" />
 
-  <link rel="stylesheet" href="../css/common.css" type="text/css" media="screen" charset="utf-8" />
+  <link rel="stylesheet" href="../../css/common.css" type="text/css" media="screen" charset="utf-8" />
 
 <script type="text/javascript" charset="utf-8">
   hasFrames = window.top.frames.main ? true : false;
-  relpath = '../';
-  framesUrl = "../frames.html#!" + escape(window.location.href);
+  relpath = '../../';
+  framesUrl = "../../frames.html#!" + escape(window.location.href);
 </script>
 
 
-  <script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
+  <script type="text/javascript" charset="utf-8" src="../../js/jquery.js"></script>
 
-  <script type="text/javascript" charset="utf-8" src="../js/app.js"></script>
+  <script type="text/javascript" charset="utf-8" src="../../js/app.js"></script>
 
 
   </head>
@@ -31,8 +31,8 @@
     <div id="header">
       <div id="menu">
   
-    <a href="../_index.html">Index (A)</a> &raquo;
-    <span class='title'><span class='object_link'><a href="../Striuct.html" title="Striuct (class)">Striuct</a></span></span>
+    <a href="../../_index.html">Index (A)</a> &raquo;
+    <span class='title'><span class='object_link'><a href="../../Striuct.html" title="Striuct (class)">Striuct</a></span></span> &raquo; <span class='title'><span class='object_link'><a href="../ClassMethods.html" title="Striuct::ClassMethods (module)">ClassMethods</a></span></span>
      &raquo; 
     <span class="title">Attributes</span>
   
@@ -43,17 +43,17 @@
       <div id="search">
   
     <a class="full_list_link" id="class_list_link"
-        href="../class_list.html">
+        href="../../class_list.html">
       Class List
     </a>
   
     <a class="full_list_link" id="method_list_link"
-        href="../method_list.html">
+        href="../../method_list.html">
       Method List
     </a>
   
     <a class="full_list_link" id="file_list_link"
-        href="../file_list.html">
+        href="../../file_list.html">
       File List
     </a>
   
@@ -63,7 +63,7 @@
 
     <iframe id="search_frame"></iframe>
 
-    <div id="content"><h1>Class: Striuct::Attributes
+    <div id="content"><h1>Class: Striuct::ClassMethods::Attributes
   
   
   
@@ -78,7 +78,7 @@
         <ul class="fullTree">
           <li>Object</li>
           
-            <li class="next">Striuct::Attributes</li>
+            <li class="next">Striuct::ClassMethods::Attributes</li>
           
         </ul>
         <a href="#" class="inheritanceTree">show all</a>
@@ -94,7 +94,7 @@
   
   
     <dt class="r2 last">Defined in:</dt>
-    <dd class="r2 last">lib/striuct/attributes.rb</dd>
+    <dd class="r2 last">lib/striuct/classmethods/attributes.rb</dd>
   
 </dl>
 <div class="clear"></div>
@@ -118,16 +118,15 @@
         <dt id="VALUES-constant" class="">VALUES =
           
         </dt>
-        <dd><pre class="code"><span class='lbracket'>[</span><span class='symbol'>:condition</span><span class='comma'>,</span> <span class='symbol'>:adjuster</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_freeze'>freeze</span></pre></dd>
+        <dd><pre class="code"><span class='lbracket'>[</span> <span class='symbol'>:condition</span><span class='comma'>,</span>
+<span class='symbol'>:adjuster</span>  <span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_freeze'>freeze</span></pre></dd>
       
         <dt id="BOOLEANS-constant" class="">BOOLEANS =
           
         </dt>
-        <dd><pre class="code"><span class='lbracket'>[</span>
- <span class='symbol'>:inference</span><span class='comma'>,</span>
- <span class='symbol'>:validate_with_setter</span><span class='comma'>,</span>
- <span class='symbol'>:validate_with_getter</span>
-<span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_freeze'>freeze</span></pre></dd>
+        <dd><pre class="code"><span class='lbracket'>[</span> <span class='symbol'>:inference</span><span class='comma'>,</span>
+<span class='symbol'>:safety_setter</span><span class='comma'>,</span>
+<span class='symbol'>:safety_getter</span> <span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_freeze'>freeze</span></pre></dd>
       
     </dl>
   
@@ -303,28 +302,6 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#has_default%3F-instance_method" title="#has_default? (instance method)">- (Boolean) <strong>has_default?</strong> </a>
-    
-
-    
-  </span>
-  
-  
-  
-  
-  
-  
-  
-
-  
-    <span class="summary_desc"><div class='inline'></div></span>
-  
-</li>
-
-      
-        <li class="public ">
-  <span class="summary_signature">
-    
       <a href="#initialize-instance_method" title="#initialize (instance method)">- (Attributes) <strong>initialize</strong> </a>
     
 
@@ -392,6 +369,28 @@
 </li>
 
       
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#with_default%3F-instance_method" title="#with_default? (instance method)">- (Boolean) <strong>with_default?</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
     </ul>
   
 
@@ -401,7 +400,7 @@
     <div class="method_details first">
   <h3 class="signature first" id="initialize-instance_method">
   
-    - (<tt><span class='object_link'><a href="" title="Striuct::Attributes (class)">Attributes</a></span></tt>) <strong>initialize</strong> 
+    - (<tt><span class='object_link'><a href="" title="Striuct::ClassMethods::Attributes (class)">Attributes</a></span></tt>) <strong>initialize</strong> 
   
 
   
@@ -428,19 +427,15 @@
 14
 15
 16
-17
-18
-19</pre>
+17</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/striuct/attributes.rb', line 13</span>
+      <pre class="code"><span class="info file"># File 'lib/striuct/classmethods/attributes.rb', line 13</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_initialize'>initialize</span>
-  <span class='ivar'>@hash</span> <span class='op'>=</span> <span class='lbrace'>{</span>
-    <span class='label'>inference:</span>            <span class='kw'>false</span><span class='comma'>,</span>
-    <span class='label'>validate_with_setter:</span> <span class='kw'>false</span><span class='comma'>,</span>
-    <span class='label'>validate_with_getter:</span> <span class='kw'>false</span>
-  <span class='rbrace'>}</span>
+  <span class='ivar'>@hash</span> <span class='op'>=</span>  <span class='lbrace'>{</span> <span class='label'>inference:</span>     <span class='kw'>false</span><span class='comma'>,</span>
+             <span class='label'>safety_setter:</span> <span class='kw'>false</span><span class='comma'>,</span>
+             <span class='label'>safety_getter:</span> <span class='kw'>false</span> <span class='rbrace'>}</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -469,20 +464,20 @@
       <pre class="lines">
 
 
+37
+38
 39
 40
 41
 42
-43
-44
-45</pre>
+43</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/striuct/attributes.rb', line 39</span>
+      <pre class="code"><span class="info file"># File 'lib/striuct/classmethods/attributes.rb', line 37</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_adjuster='>adjuster=</span><span class='lparen'>(</span><span class='id identifier rubyid_adjuster'>adjuster</span><span class='rparen'>)</span>
   <span class='kw'>unless</span> <span class='op'>::</span><span class='const'>Validation</span><span class='period'>.</span><span class='id identifier rubyid_adjustable?'>adjustable?</span> <span class='id identifier rubyid_adjuster'>adjuster</span>
-    <span class='id identifier rubyid_raise'>raise</span> <span class='const'>ArgumentError</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>wrong number of block argument </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_arity'>arity</span><span class='rbrace'>}</span><span class='tstring_content'> for 1</span><span class='tstring_end'>&quot;</span></span>
+    <span class='id identifier rubyid_raise'>raise</span> <span class='const'>ArgumentError</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>wrong object for adjuster</span><span class='tstring_end'>'</span></span>
   <span class='kw'>end</span>
 
   <span class='ivar'>@hash</span><span class='lbracket'>[</span><span class='symbol'>:adjuster</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_adjuster'>adjuster</span>
@@ -529,16 +524,16 @@
       <pre class="lines">
 
 
+78
+79
 80
 81
 82
 83
-84
-85
-86</pre>
+84</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/striuct/attributes.rb', line 80</span>
+      <pre class="code"><span class="info file"># File 'lib/striuct/classmethods/attributes.rb', line 78</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_check_default_lazy_proc'>check_default_lazy_proc</span><span class='lparen'>(</span><span class='id identifier rubyid__proc'>_proc</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_raise'>raise</span> <span class='const'>TypeError</span> <span class='kw'>unless</span> <span class='id identifier rubyid__proc'>_proc</span><span class='period'>.</span><span class='id identifier rubyid_respond_to?'>respond_to?</span> <span class='symbol'>:call</span>
@@ -567,16 +562,16 @@
       <pre class="lines">
 
 
+29
+30
 31
 32
 33
 34
-35
-36
-37</pre>
+35</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/striuct/attributes.rb', line 31</span>
+      <pre class="code"><span class="info file"># File 'lib/striuct/classmethods/attributes.rb', line 29</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_condition='>condition=</span><span class='lparen'>(</span><span class='id identifier rubyid_condition'>condition</span><span class='rparen'>)</span>
   <span class='kw'>unless</span> <span class='op'>::</span><span class='const'>Validation</span><span class='period'>.</span><span class='id identifier rubyid_conditionable?'>conditionable?</span> <span class='id identifier rubyid_condition'>condition</span>
@@ -605,12 +600,12 @@
       <pre class="lines">
 
 
-67
-68
-69</pre>
+65
+66
+67</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/striuct/attributes.rb', line 67</span>
+      <pre class="code"><span class="info file"># File 'lib/striuct/classmethods/attributes.rb', line 65</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_default_type'>default_type</span>
   <span class='ivar'>@hash</span><span class='period'>.</span><span class='id identifier rubyid_fetch'>fetch</span> <span class='symbol'>:default_type</span>
@@ -635,12 +630,12 @@
       <pre class="lines">
 
 
-63
-64
-65</pre>
+61
+62
+63</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/striuct/attributes.rb', line 63</span>
+      <pre class="code"><span class="info file"># File 'lib/striuct/classmethods/attributes.rb', line 61</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_default_value'>default_value</span>
   <span class='ivar'>@hash</span><span class='period'>.</span><span class='id identifier rubyid_fetch'>fetch</span> <span class='symbol'>:default_value</span>
@@ -665,14 +660,14 @@
       <pre class="lines">
 
 
+92
+93
 94
 95
-96
-97
-98</pre>
+96</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/striuct/attributes.rb', line 94</span>
+      <pre class="code"><span class="info file"># File 'lib/striuct/classmethods/attributes.rb', line 92</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_dup'>dup</span>
   <span class='id identifier rubyid_ret'>ret</span> <span class='op'>=</span> <span class='kw'>super</span>
@@ -699,71 +694,19 @@
       <pre class="lines">
 
 
+86
+87
 88
 89
-90
-91
-92</pre>
+90</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/striuct/attributes.rb', line 88</span>
+      <pre class="code"><span class="info file"># File 'lib/striuct/classmethods/attributes.rb', line 86</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_freeze'>freeze</span>
   <span class='id identifier rubyid_ret'>ret</span> <span class='op'>=</span> <span class='kw'>super</span>
   <span class='ivar'>@hash</span><span class='period'>.</span><span class='id identifier rubyid_freeze'>freeze</span>
   <span class='id identifier rubyid_ret'>ret</span>
-<span class='kw'>end</span></pre>
-    </td>
-  </tr>
-</table>
-</div>
-    
-      <div class="method_details ">
-  <h3 class="signature " id="has_default?-instance_method">
-  
-    - (<tt>Boolean</tt>) <strong>has_default?</strong> 
-  
-
-  
-
-  
-</h3><div class="docstring">
-  <div class="discussion">
-    
-
-  </div>
-</div>
-<div class="tags">
-  
-<p class="tag_title">Returns:</p>
-<ul class="return">
-  
-    <li>
-      
-      
-        <span class='type'>(<tt>Boolean</tt>)</span>
-      
-      
-      
-    </li>
-  
-</ul>
-
-</div><table class="source_code">
-  <tr>
-    <td>
-      <pre class="lines">
-
-
-59
-60
-61</pre>
-    </td>
-    <td>
-      <pre class="code"><span class="info file"># File 'lib/striuct/attributes.rb', line 59</span>
-
-<span class='kw'>def</span> <span class='id identifier rubyid_has_default?'>has_default?</span>
-  <span class='ivar'>@hash</span><span class='period'>.</span><span class='id identifier rubyid_has_key?'>has_key?</span> <span class='symbol'>:default_value</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -785,14 +728,14 @@
       <pre class="lines">
 
 
+100
+101
 102
 103
-104
-105
-106</pre>
+104</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/striuct/attributes.rb', line 102</span>
+      <pre class="code"><span class="info file"># File 'lib/striuct/classmethods/attributes.rb', line 100</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_initialize_copy'>initialize_copy</span><span class='lparen'>(</span><span class='id identifier rubyid_original'>original</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_ret'>ret</span> <span class='op'>=</span> <span class='kw'>super</span> <span class='id identifier rubyid_original'>original</span>
@@ -862,16 +805,16 @@
       <pre class="lines">
 
 
+70
+71
 72
 73
 74
 75
-76
-77
-78</pre>
+76</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/striuct/attributes.rb', line 72</span>
+      <pre class="code"><span class="info file"># File 'lib/striuct/classmethods/attributes.rb', line 70</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_default'>set_default</span><span class='lparen'>(</span><span class='id identifier rubyid_value'>value</span><span class='comma'>,</span> <span class='id identifier rubyid_type'>type</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_raise'>raise</span> <span class='const'>TypeError</span> <span class='kw'>unless</span> <span class='id identifier rubyid_type'>type</span><span class='period'>.</span><span class='id identifier rubyid_equal?'>equal?</span><span class='lparen'>(</span><span class='symbol'>:value</span><span class='rparen'>)</span> <span class='kw'>or</span> <span class='id identifier rubyid_type'>type</span><span class='period'>.</span><span class='id identifier rubyid_equal?'>equal?</span><span class='lparen'>(</span><span class='symbol'>:lazy</span><span class='rparen'>)</span>
@@ -885,12 +828,64 @@
 </table>
 </div>
     
+      <div class="method_details ">
+  <h3 class="signature " id="with_default?-instance_method">
+  
+    - (<tt>Boolean</tt>) <strong>with_default?</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+57
+58
+59</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/striuct/classmethods/attributes.rb', line 57</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_with_default?'>with_default?</span>
+  <span class='ivar'>@hash</span><span class='period'>.</span><span class='id identifier rubyid_has_key?'>has_key?</span> <span class='symbol'>:default_value</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
   </div>
 
 </div>
 
     <div id="footer">
-  Generated on Fri Sep 14 07:09:13 2012 by
+  Generated on Sun Sep 30 20:43:22 2012 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.8.2.1 (ruby-1.9.3).
 </div>

@@ -99,7 +99,7 @@
   
     <dt class="r1 last">Defined in:</dt>
     <dd class="r1 last">lib/striuct.rb<span class="defines">,<br />
-  lib/striuct/version.rb,<br /> lib/striuct/structs.rb,<br /> lib/striuct/attributes.rb,<br /> lib/striuct/singleton_class.rb,<br /> lib/striuct/classmethods/fix.rb,<br /> lib/striuct/classmethods/copy.rb,<br /> lib/striuct/classmethods/enum.rb,<br /> lib/striuct/classmethods/macro.rb,<br /> lib/striuct/classmethods/hashy.rb,<br /> lib/striuct/classmethods/named.rb,<br /> lib/striuct/classmethods/length.rb,<br /> lib/striuct/instancemethods/enum.rb,<br /> lib/striuct/classmethods/default.rb,<br /> lib/striuct/instancemethods/cast.rb,<br /> lib/striuct/instancemethods/lock.rb,<br /> lib/striuct/instancemethods/to_s.rb,<br /> lib/striuct/instancemethods/hashy.rb,<br /> lib/striuct/hashdeepdupulicatable.rb,<br /> lib/striuct/classmethods/to_struct.rb,<br /> lib/striuct/instancemethods/object.rb,<br /> lib/striuct/instancemethods/assign.rb,<br /> lib/striuct/instancemethods/safety.rb,<br /> lib/striuct/instancemethods/values.rb,<br /> lib/striuct/instancemethods/default.rb,<br /> lib/striuct/instancemethods/compare.rb,<br /> lib/striuct/classmethods/validation.rb,<br /> lib/striuct/classmethods/adjustment.rb,<br /> lib/striuct/classmethods/constructor.rb,<br /> lib/striuct/instancemethods/subscript.rb,<br /> lib/striuct/instancemethods/validation.rb,<br /> lib/striuct/instancemethods/keyvalidatable.rb,<br /> lib/striuct/classmethods/prevent_conflicts.rb,<br /> lib/striuct/instancemethods/delegate_class_methods.rb</span>
+  lib/striuct/structs.rb,<br /> lib/striuct/singleton_class.rb,<br /> lib/striuct/classmethods/fix.rb,<br /> lib/striuct/classmethods/enum.rb,<br /> lib/striuct/classmethods/copy.rb,<br /> lib/striuct/classmethods/macro.rb,<br /> lib/striuct/classmethods/names.rb,<br /> lib/striuct/classmethods/inner.rb,<br /> lib/striuct/classmethods/length.rb,<br /> lib/striuct/instancemethods/cast.rb,<br /> lib/striuct/instancemethods/lock.rb,<br /> lib/striuct/instancemethods/to_s.rb,<br /> lib/striuct/classmethods/default.rb,<br /> lib/striuct/instancemethods/enum.rb,<br /> lib/striuct/instancemethods/hashy.rb,<br /> lib/striuct/instancemethods/getter.rb,<br /> lib/striuct/classmethods/to_struct.rb,<br /> lib/striuct/classmethods/predicate.rb,<br /> lib/striuct/instancemethods/object.rb,<br /> lib/striuct/instancemethods/assign.rb,<br /> lib/striuct/instancemethods/values.rb,<br /> lib/striuct/instancemethods/safety.rb,<br /> lib/striuct/instancemethods/setter.rb,<br /> lib/striuct/instancemethods/compare.rb,<br /> lib/striuct/classmethods/adjustment.rb,<br /> lib/striuct/instancemethods/default.rb,<br /> lib/striuct/classmethods/validation.rb,<br /> lib/striuct/classmethods/constructor.rb,<br /> lib/striuct/instancemethods/validation.rb,<br /> lib/striuct/instancemethods/requirements.rb,<br /> lib/striuct/instancemethods/keyvalidatable.rb,<br /> lib/striuct/classmethods/conflict_management.rb,<br /> lib/striuct/instancemethods/delegate_class_methods.rb</span>
 </dd>
   
 </dl>
@@ -122,26 +122,12 @@
 <p class="children">
   
     
-      <strong class="modules">Modules:</strong> <span class='object_link'><a href="Striuct/ClassMethods.html" title="Striuct::ClassMethods (module)">ClassMethods</a></span>, <span class='object_link'><a href="Striuct/HashDeepDupulicatable.html" title="Striuct::HashDeepDupulicatable (module)">HashDeepDupulicatable</a></span>, <span class='object_link'><a href="Striuct/InstanceMethods.html" title="Striuct::InstanceMethods (module)">InstanceMethods</a></span>, <span class='object_link'><a href="Striuct/Structs.html" title="Striuct::Structs (module)">Structs</a></span>
+      <strong class="modules">Modules:</strong> <span class='object_link'><a href="Striuct/ClassMethods.html" title="Striuct::ClassMethods (module)">ClassMethods</a></span>, <span class='object_link'><a href="Striuct/InstanceMethods.html" title="Striuct::InstanceMethods (module)">InstanceMethods</a></span>, <span class='object_link'><a href="Striuct/Structs.html" title="Striuct::Structs (module)">Structs</a></span>
     
   
-    
-      <strong class="classes">Classes:</strong> <span class='object_link'><a href="Striuct/Attributes.html" title="Striuct::Attributes (class)">Attributes</a></span>
     
   
 </p>
-
-  <h2>Constant Summary</h2>
-  
-    <dl class="constants">
-      
-        <dt id="VERSION-constant" class="">VERSION =
-          
-        </dt>
-        <dd><pre class="code"><span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>0.3.5.1</span><span class='tstring_end'>'</span></span><span class='period'>.</span><span class='id identifier rubyid_freeze'>freeze</span></pre></dd>
-      
-    </dl>
-  
 
 
 
@@ -332,6 +318,8 @@
       <pre class="lines">
 
 
+33
+34
 35
 36
 37
@@ -339,12 +327,10 @@
 39
 40
 41
-42
-43
-44</pre>
+42</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/striuct/singleton_class.rb', line 35</span>
+      <pre class="code"><span class="info file"># File 'lib/striuct/singleton_class.rb', line 33</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_define'>define</span><span class='lparen'>(</span><span class='op'>&amp;</span><span class='id identifier rubyid_block'>block</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_raise'>raise</span> <span class='const'>ArgumentError</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>must with block</span><span class='tstring_end'>'</span></span> <span class='kw'>unless</span> <span class='id identifier rubyid_block_given?'>block_given?</span>
@@ -376,6 +362,8 @@
       <pre class="lines">
 
 
+50
+51
 52
 53
 54
@@ -388,11 +376,10 @@
 61
 62
 63
-64
-65</pre>
+64</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/striuct/singleton_class.rb', line 52</span>
+      <pre class="code"><span class="info file"># File 'lib/striuct/singleton_class.rb', line 50</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_inherited'>inherited</span><span class='lparen'>(</span><span class='id identifier rubyid_subclass'>subclass</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_subclass'>subclass</span><span class='period'>.</span><span class='id identifier rubyid_class_eval'>class_eval</span> <span class='kw'>do</span>
@@ -405,7 +392,8 @@
     <span class='ivar'>@autonyms</span>      <span class='op'>=</span> <span class='lbracket'>[</span><span class='rbracket'>]</span>
     <span class='ivar'>@attributes</span>    <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='period'>.</span><span class='id identifier rubyid_extend'>extend</span> <span class='const'>HashDeepDupulicatable</span> <span class='comment'># autonym =&gt; Attributes
 </span>    <span class='ivar'>@aliases</span>       <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span> <span class='comment'># aliased =&gt; autonym
-</span>    <span class='ivar'>@protect_level</span> <span class='op'>=</span> <span class='symbol'>:prevent</span>
+</span>    <span class='ivar'>@conflict_management_level</span> <span class='op'>=</span> 
+      <span class='const'>ClassMethods</span><span class='op'>::</span><span class='const'>DEFAULT_CONFLICT_MANAGEMENT_LEVEL</span>
   <span class='kw'>end</span>
 <span class='kw'>end</span></pre>
     </td>
@@ -478,6 +466,8 @@
       <pre class="lines">
 
 
+15
+16
 17
 18
 19
@@ -490,12 +480,10 @@
 26
 27
 28
-29
-30
-31</pre>
+29</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/striuct/singleton_class.rb', line 17</span>
+      <pre class="code"><span class="info file"># File 'lib/striuct/singleton_class.rb', line 15</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='op'>*</span><span class='id identifier rubyid_autonyms'>autonyms</span><span class='comma'>,</span> <span class='op'>&amp;</span><span class='id identifier rubyid_block'>block</span><span class='rparen'>)</span>
   <span class='comment'># warning for Ruby's Struct.new user
@@ -532,10 +520,10 @@
       <pre class="lines">
 
 
-11</pre>
+9</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/striuct/singleton_class.rb', line 11</span>
+      <pre class="code"><span class="info file"># File 'lib/striuct/singleton_class.rb', line 9</span>
 
 <span class='id identifier rubyid_alias_method'>alias_method</span> <span class='symbol'>:new_instance</span><span class='comma'>,</span> <span class='symbol'>:new</span></pre>
     </td>
@@ -558,10 +546,10 @@
       <pre class="lines">
 
 
-50</pre>
+48</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/striuct/singleton_class.rb', line 50</span>
+      <pre class="code"><span class="info file"># File 'lib/striuct/singleton_class.rb', line 48</span>
 
 <span class='id identifier rubyid_alias_method'>alias_method</span> <span class='symbol'>:original_inherited</span><span class='comma'>,</span> <span class='symbol'>:inherited</span></pre>
     </td>
@@ -574,7 +562,7 @@
 </div>
 
     <div id="footer">
-  Generated on Fri Sep 14 07:09:13 2012 by
+  Generated on Sun Sep 30 20:55:03 2012 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.8.2.1 (ruby-1.9.3).
 </div>
