@@ -6,7 +6,7 @@
 <title>
   Module: Striuct::ClassMethods
   
-    &mdash; Documentation by YARD 0.8.2.1
+    &mdash; Documentation by YARD 0.8.3
   
 </title>
 
@@ -80,7 +80,7 @@
   
     <dt class="r1 last">Defined in:</dt>
     <dd class="r1 last">lib/striuct/classmethods/fix.rb<span class="defines">,<br />
-  lib/striuct/classmethods/enum.rb,<br /> lib/striuct/classmethods/copy.rb,<br /> lib/striuct/classmethods/macro.rb,<br /> lib/striuct/classmethods/names.rb,<br /> lib/striuct/classmethods/inner.rb,<br /> lib/striuct/classmethods/length.rb,<br /> lib/striuct/classmethods/default.rb,<br /> lib/striuct/classmethods/to_struct.rb,<br /> lib/striuct/classmethods/predicate.rb,<br /> lib/striuct/classmethods/adjustment.rb,<br /> lib/striuct/classmethods/validation.rb,<br /> lib/striuct/classmethods/constructor.rb,<br /> lib/striuct/classmethods/conflict_management.rb</span>
+  lib/striuct/classmethods/enum.rb,<br /> lib/striuct/classmethods/copy.rb,<br /> lib/striuct/classmethods/inner.rb,<br /> lib/striuct/classmethods/macro.rb,<br /> lib/striuct/classmethods/names.rb,<br /> lib/striuct/classmethods/length.rb,<br /> lib/striuct/classmethods/default.rb,<br /> lib/striuct/classmethods/to_struct.rb,<br /> lib/striuct/classmethods/predicate.rb,<br /> lib/striuct/classmethods/validation.rb,<br /> lib/striuct/classmethods/adjustment.rb,<br /> lib/striuct/classmethods/constructor.rb,<br /> lib/striuct/classmethods/conflict_management.rb</span>
 </dd>
   
 </dl>
@@ -96,8 +96,30 @@
         </dt>
         <dd><pre class="code"><span class='op'>::</span><span class='const'>Validation</span><span class='op'>::</span><span class='const'>Condition</span><span class='op'>::</span><span class='const'>ANYTHING</span></pre></dd>
       
-        <dt id="ADD_MEMBER_OPTIONS-constant" class="">ADD_MEMBER_OPTIONS =
-          
+        <dt id="ADD_MEMBER_OptArg-constant" class="">ADD_MEMBER_OptArg =
+          <div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Class</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div>
         </dt>
         <dd><pre class="code"><span class='const'>OptionalArgument</span><span class='period'>.</span><span class='id identifier rubyid_define'>define</span> <span class='lbrace'>{</span>
   <span class='id identifier rubyid_opt'>opt</span> <span class='symbol'>:default_value</span><span class='comma'>,</span> <span class='label'>aliases:</span> <span class='lbracket'>[</span><span class='symbol'>:default</span><span class='rbracket'>]</span>
@@ -106,6 +128,36 @@
   <span class='id identifier rubyid_opt'>opt</span> <span class='symbol'>:inference</span><span class='comma'>,</span> <span class='label'>default:</span> <span class='kw'>false</span>
   <span class='id identifier rubyid_opt'>opt</span> <span class='symbol'>:setter_validation</span><span class='comma'>,</span> <span class='label'>aliases:</span> <span class='lbracket'>[</span><span class='symbol'>:writer_validation</span><span class='rbracket'>]</span><span class='comma'>,</span> <span class='label'>default:</span> <span class='kw'>true</span>
   <span class='id identifier rubyid_opt'>opt</span> <span class='symbol'>:getter_validation</span><span class='comma'>,</span> <span class='label'>aliases:</span> <span class='lbracket'>[</span><span class='symbol'>:reader_validation</span><span class='rbracket'>]</span><span class='comma'>,</span> <span class='label'>default:</span> <span class='kw'>false</span>
+<span class='rbrace'>}</span></pre></dd>
+      
+        <dt id="DEFINE_OptArg-constant" class="">DEFINE_OptArg =
+          <div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Class</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div>
+        </dt>
+        <dd><pre class="code"><span class='const'>OptionalArgument</span><span class='period'>.</span><span class='id identifier rubyid_define'>define</span> <span class='lbrace'>{</span>
+  <span class='id identifier rubyid_opt'>opt</span> <span class='symbol'>:lock</span><span class='comma'>,</span> <span class='label'>default:</span> <span class='kw'>true</span><span class='comma'>,</span> <span class='label'>condition:</span> <span class='id identifier rubyid_BOOLEAN?'>BOOLEAN?</span>
+  <span class='id identifier rubyid_opt'>opt</span> <span class='symbol'>:strict</span><span class='comma'>,</span> <span class='label'>default:</span> <span class='kw'>true</span><span class='comma'>,</span> <span class='label'>condition:</span> <span class='id identifier rubyid_BOOLEAN?'>BOOLEAN?</span>
 <span class='rbrace'>}</span></pre></dd>
       
         <dt id="NAMING_RISKS-constant" class="">NAMING_RISKS =
@@ -1261,37 +1313,6 @@
     </ul>
   
     <h2>
-      Adjuster
-      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
-    </h2>
-
-    <ul class="summary">
-      
-        <li class="public ">
-  <span class="summary_signature">
-    
-      <a href="#adjuster_for-instance_method" title="#adjuster_for (instance method)">- (Object) <strong>adjuster_for</strong>(key) </a>
-    
-
-    
-  </span>
-  
-  
-  
-  
-  
-  
-  
-
-  
-    <span class="summary_desc"><div class='inline'></div></span>
-  
-</li>
-
-      
-    </ul>
-  
-    <h2>
       Validation
       <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
     </h2>
@@ -1323,6 +1344,37 @@
     </ul>
   
     <h2>
+      Adjuster
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#adjuster_for-instance_method" title="#adjuster_for (instance method)">- (Object) <strong>adjuster_for</strong>(key) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+    </ul>
+  
+    <h2>
       Constructor
       <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
     </h2>
@@ -1332,7 +1384,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#define-instance_method" title="#define (instance method)">- (void) <strong>define</strong>(options = {lock: true, strict: true}) {|instance| ... }</a>
+      <a href="#define-instance_method" title="#define (instance method)">- (void) <strong>define</strong>(options = {}) {|instance| ... }</a>
     
 
     
@@ -2427,7 +2479,6 @@
       <pre class="lines">
 
 
-29
 30
 31
 32
@@ -2456,16 +2507,17 @@
 55
 56
 57
-58</pre>
+58
+59</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/striuct/classmethods/macro.rb', line 29</span>
+      <pre class="code"><span class="info file"># File 'lib/striuct/classmethods/macro.rb', line 30</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_add_member'>add_member</span><span class='lparen'>(</span><span class='id identifier rubyid_autonym'>autonym</span><span class='comma'>,</span> <span class='id identifier rubyid_condition'>condition</span><span class='op'>=</span><span class='const'>ANYTHING</span><span class='comma'>,</span> <span class='id identifier rubyid_options'>options</span><span class='op'>=</span><span class='lbrace'>{</span><span class='rbrace'>}</span><span class='comma'>,</span> <span class='op'>&amp;</span><span class='id identifier rubyid_adjuster'>adjuster</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_raise'>raise</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>can't modify frozen Class</span><span class='tstring_end'>&quot;</span></span> <span class='kw'>if</span> <span class='id identifier rubyid_frozen?'>frozen?</span>
   <span class='id identifier rubyid_raise'>raise</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>already closed to add member in </span><span class='embexpr_beg'>#{</span><span class='kw'>self</span><span class='rbrace'>}</span><span class='tstring_end'>&quot;</span></span> <span class='kw'>if</span> <span class='id identifier rubyid_closed?'>closed?</span>
   
-  <span class='id identifier rubyid_options'>options</span> <span class='op'>=</span> <span class='const'>ADD_MEMBER_OPTIONS</span><span class='period'>.</span><span class='id identifier rubyid_parse'>parse</span> <span class='id identifier rubyid_options'>options</span>
+  <span class='id identifier rubyid_options'>options</span> <span class='op'>=</span> <span class='const'>ADD_MEMBER_OptArg</span><span class='period'>.</span><span class='id identifier rubyid_parse'>parse</span> <span class='id identifier rubyid_options'>options</span>
   <span class='id identifier rubyid_autonym'>autonym</span> <span class='op'>=</span> <span class='id identifier rubyid_autonym'>autonym</span><span class='period'>.</span><span class='id identifier rubyid_to_sym'>to_sym</span> <span class='comment'># First difinition for an autonym
 </span>
   <span class='id identifier rubyid_raise'>raise</span> <span class='const'>ArgumentError</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>%Q!</span><span class='tstring_content'>already exist name &quot;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_autonym'>autonym</span><span class='rbrace'>}</span><span class='tstring_content'>&quot;</span><span class='tstring_end'>!</span></span> <span class='kw'>if</span> <span class='id identifier rubyid_member?'>member?</span> <span class='id identifier rubyid_autonym'>autonym</span>
@@ -2559,16 +2611,16 @@
       <pre class="lines">
 
 
-65
 66
 67
 68
 69
 70
-71</pre>
+71
+72</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/striuct/classmethods/macro.rb', line 65</span>
+      <pre class="code"><span class="info file"># File 'lib/striuct/classmethods/macro.rb', line 66</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_add_members'>add_members</span><span class='lparen'>(</span><span class='id identifier rubyid_autonym'>autonym</span><span class='comma'>,</span> <span class='op'>*</span><span class='id identifier rubyid_autonyms'>autonyms</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_raise'>raise</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>can't modify frozen Class</span><span class='tstring_end'>&quot;</span></span> <span class='kw'>if</span> <span class='id identifier rubyid_frozen?'>frozen?</span>
@@ -2737,7 +2789,6 @@
       <pre class="lines">
 
 
-76
 77
 78
 79
@@ -2749,10 +2800,11 @@
 85
 86
 87
-88</pre>
+88
+89</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/striuct/classmethods/macro.rb', line 76</span>
+      <pre class="code"><span class="info file"># File 'lib/striuct/classmethods/macro.rb', line 77</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_alias_member'>alias_member</span><span class='lparen'>(</span><span class='id identifier rubyid_aliased'>aliased</span><span class='comma'>,</span> <span class='id identifier rubyid_autonym'>autonym</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_raise'>raise</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>can't modify frozen Class</span><span class='tstring_end'>&quot;</span></span> <span class='kw'>if</span> <span class='id identifier rubyid_frozen?'>frozen?</span>
@@ -4035,7 +4087,7 @@
       <div class="method_details ">
   <h3 class="signature " id="define-instance_method">
   
-    - (<tt>void</tt>) <strong>define</strong>(options = {lock: true, strict: true}) {|instance| ... }
+    - (<tt>void</tt>) <strong>define</strong>(options = {}) {|instance| ... }
   
 
   
@@ -4061,7 +4113,7 @@
         <span class='type'>(<tt>Hash</tt>)</span>
       
       
-        <em class="default">(defaults to: <tt>{lock: true, strict: true}</tt>)</em>
+        <em class="default">(defaults to: <tt>{}</tt>)</em>
       
       
     </li>
@@ -4148,13 +4200,6 @@
       <pre class="lines">
 
 
-37
-38
-39
-40
-41
-42
-43
 44
 45
 46
@@ -4169,31 +4214,36 @@
 55
 56
 57
-58</pre>
+58
+59
+60
+61
+62
+63
+64</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/striuct/classmethods/constructor.rb', line 37</span>
+      <pre class="code"><span class="info file"># File 'lib/striuct/classmethods/constructor.rb', line 44</span>
 
-<span class='kw'>def</span> <span class='id identifier rubyid_define'>define</span><span class='lparen'>(</span><span class='id identifier rubyid_options'>options</span><span class='op'>=</span><span class='lbrace'>{</span><span class='label'>lock:</span> <span class='kw'>true</span><span class='comma'>,</span> <span class='label'>strict:</span> <span class='kw'>true</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+<span class='kw'>def</span> <span class='id identifier rubyid_define'>define</span><span class='lparen'>(</span><span class='id identifier rubyid_options'>options</span><span class='op'>=</span><span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_raise'>raise</span> <span class='const'>ArgumentError</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>must with block</span><span class='tstring_end'>'</span></span> <span class='kw'>unless</span> <span class='id identifier rubyid_block_given?'>block_given?</span>
-  <span class='id identifier rubyid_options'>options</span><span class='period'>.</span><span class='id identifier rubyid_dup'>dup</span><span class='period'>.</span><span class='id identifier rubyid_extend'>extend</span><span class='lparen'>(</span><span class='const'>KeyValidatable</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_validate_keys'>validate_keys</span> <span class='label'>let:</span> <span class='lbracket'>[</span><span class='symbol'>:lock</span><span class='comma'>,</span> <span class='symbol'>:strict</span><span class='rbracket'>]</span>
-  
-  <span class='id identifier rubyid_lock'>lock</span><span class='comma'>,</span> <span class='id identifier rubyid_strict'>strict</span> <span class='op'>=</span> <span class='id identifier rubyid_options'>options</span><span class='lbracket'>[</span><span class='symbol'>:lock</span><span class='rbracket'>]</span><span class='comma'>,</span> <span class='id identifier rubyid_options'>options</span><span class='lbracket'>[</span><span class='symbol'>:strict</span><span class='rbracket'>]</span>
+  <span class='id identifier rubyid_opts'>opts</span> <span class='op'>=</span> <span class='const'>DEFINE_OptArg</span><span class='period'>.</span><span class='id identifier rubyid_parse'>parse</span> <span class='id identifier rubyid_options'>options</span>
   
   <span class='id identifier rubyid_new'>new</span><span class='period'>.</span><span class='id identifier rubyid_tap'>tap</span> <span class='lbrace'>{</span><span class='op'>|</span><span class='id identifier rubyid_instance'>instance</span><span class='op'>|</span>
     <span class='kw'>yield</span> <span class='id identifier rubyid_instance'>instance</span>
 
-    <span class='kw'>unless</span> <span class='lparen'>(</span><span class='id identifier rubyid_yets'>yets</span> <span class='op'>=</span> <span class='id identifier rubyid_autonyms'>autonyms</span><span class='period'>.</span><span class='id identifier rubyid_select'>select</span><span class='lbrace'>{</span><span class='op'>|</span><span class='id identifier rubyid_autonym'>autonym</span><span class='op'>|</span><span class='op'>!</span> <span class='id identifier rubyid_instance'>instance</span><span class='period'>.</span><span class='id identifier rubyid_assign?'>assign?</span><span class='lparen'>(</span><span class='id identifier rubyid_autonym'>autonym</span><span class='rparen'>)</span><span class='rbrace'>}</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_empty?'>empty?</span>
+    <span class='id identifier rubyid_yets'>yets</span> <span class='op'>=</span> <span class='id identifier rubyid_autonyms'>autonyms</span><span class='period'>.</span><span class='id identifier rubyid_select'>select</span><span class='lbrace'>{</span><span class='op'>|</span><span class='id identifier rubyid_autonym'>autonym</span><span class='op'>|</span><span class='op'>!</span> <span class='id identifier rubyid_instance'>instance</span><span class='period'>.</span><span class='id identifier rubyid_assign?'>assign?</span><span class='lparen'>(</span><span class='id identifier rubyid_autonym'>autonym</span><span class='rparen'>)</span><span class='rbrace'>}</span>
+    <span class='kw'>unless</span> <span class='id identifier rubyid_yets'>yets</span><span class='period'>.</span><span class='id identifier rubyid_empty?'>empty?</span>
       <span class='id identifier rubyid_raise'>raise</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>not assigned members are, yet '</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_yets'>yets</span><span class='period'>.</span><span class='id identifier rubyid_inspect'>inspect</span><span class='rbrace'>}</span><span class='tstring_content'> in </span><span class='embexpr_beg'>#{</span><span class='kw'>self</span><span class='rbrace'>}</span><span class='tstring_content'>'</span><span class='tstring_end'>&quot;</span></span>
     <span class='kw'>end</span>
     
-    <span class='kw'>if</span> <span class='id identifier rubyid_strict'>strict</span> <span class='op'>&amp;&amp;</span>
-      <span class='op'>!</span> <span class='lparen'>(</span><span class='id identifier rubyid_invalids'>invalids</span> <span class='op'>=</span> <span class='id identifier rubyid_autonyms'>autonyms</span><span class='period'>.</span><span class='id identifier rubyid_select'>select</span><span class='lbrace'>{</span><span class='op'>|</span><span class='id identifier rubyid_autonym'>autonym</span><span class='op'>|</span><span class='op'>!</span> <span class='id identifier rubyid_instance'>instance</span><span class='period'>.</span><span class='id identifier rubyid_valid?'>valid?</span><span class='lparen'>(</span><span class='id identifier rubyid_autonym'>autonym</span><span class='rparen'>)</span><span class='rbrace'>}</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_empty?'>empty?</span>
-
-      <span class='id identifier rubyid_raise'>raise</span> <span class='const'>Validation</span><span class='op'>::</span><span class='const'>InvalidWritingError</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>invalids members are, yet '</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_invalids'>invalids</span><span class='period'>.</span><span class='id identifier rubyid_inspect'>inspect</span><span class='rbrace'>}</span><span class='tstring_content'> in </span><span class='embexpr_beg'>#{</span><span class='kw'>self</span><span class='rbrace'>}</span><span class='tstring_content'>'</span><span class='tstring_end'>&quot;</span></span>
+    <span class='id identifier rubyid_invalids'>invalids</span> <span class='op'>=</span> <span class='id identifier rubyid_autonyms'>autonyms</span><span class='period'>.</span><span class='id identifier rubyid_select'>select</span><span class='lbrace'>{</span><span class='op'>|</span><span class='id identifier rubyid_autonym'>autonym</span><span class='op'>|</span><span class='op'>!</span> <span class='id identifier rubyid_instance'>instance</span><span class='period'>.</span><span class='id identifier rubyid_valid?'>valid?</span><span class='lparen'>(</span><span class='id identifier rubyid_autonym'>autonym</span><span class='rparen'>)</span><span class='rbrace'>}</span>
+    <span class='kw'>if</span> <span class='id identifier rubyid_opts'>opts</span><span class='period'>.</span><span class='id identifier rubyid_strict'>strict</span> <span class='op'>&amp;&amp;</span> <span class='op'>!</span><span class='id identifier rubyid_invalids'>invalids</span><span class='period'>.</span><span class='id identifier rubyid_empty?'>empty?</span>
+      <span class='id identifier rubyid_raise'>raise</span> <span class='const'>Validation</span><span class='op'>::</span><span class='const'>InvalidWritingError</span><span class='comma'>,</span>
+             <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>invalids members are, yet '</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_invalids'>invalids</span><span class='period'>.</span><span class='id identifier rubyid_inspect'>inspect</span><span class='rbrace'>}</span><span class='tstring_content'> in </span><span class='embexpr_beg'>#{</span><span class='kw'>self</span><span class='rbrace'>}</span><span class='tstring_content'>'</span><span class='tstring_end'>&quot;</span></span>
     <span class='kw'>end</span>
 
-    <span class='id identifier rubyid_instance'>instance</span><span class='period'>.</span><span class='id identifier rubyid_lock_all'>lock_all</span> <span class='kw'>if</span> <span class='id identifier rubyid_lock'>lock</span>
+    <span class='id identifier rubyid_instance'>instance</span><span class='period'>.</span><span class='id identifier rubyid_lock_all'>lock_all</span> <span class='kw'>if</span> <span class='id identifier rubyid_opts'>opts</span><span class='period'>.</span><span class='id identifier rubyid_lock'>lock</span>
   <span class='rbrace'>}</span>
 <span class='kw'>end</span></pre>
     </td>
@@ -4659,7 +4709,6 @@
       <pre class="lines">
 
 
-16
 17
 18
 19
@@ -4669,15 +4718,16 @@
 23
 24
 25
-26</pre>
+26
+27</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/striuct/classmethods/constructor.rb', line 16</span>
+      <pre class="code"><span class="info file"># File 'lib/striuct/classmethods/constructor.rb', line 17</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_for_pairs'>for_pairs</span><span class='lparen'>(</span><span class='id identifier rubyid_pairs'>pairs</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_raise'>raise</span> <span class='const'>TypeError</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>no pairs object</span><span class='tstring_end'>'</span></span> <span class='kw'>unless</span> <span class='id identifier rubyid_pairs'>pairs</span><span class='period'>.</span><span class='id identifier rubyid_respond_to?'>respond_to?</span><span class='lparen'>(</span><span class='symbol'>:each_pair</span><span class='rparen'>)</span>
-
-  <span class='id identifier rubyid_pairs'>pairs</span><span class='period'>.</span><span class='id identifier rubyid_dup'>dup</span><span class='period'>.</span><span class='id identifier rubyid_extend'>extend</span><span class='lparen'>(</span><span class='const'>KeyValidatable</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_validate_keys'>validate_keys</span> <span class='label'>let:</span> <span class='id identifier rubyid_all_members'>all_members</span>
+  <span class='const'>KeyValidatable</span><span class='period'>.</span><span class='id identifier rubyid_validate_array'>validate_array</span> <span class='const'>KeyValidatable</span><span class='period'>.</span><span class='id identifier rubyid_keys_for'>keys_for</span><span class='lparen'>(</span><span class='id identifier rubyid_pairs'>pairs</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_map'>map</span><span class='lparen'>(</span><span class='op'>&amp;</span><span class='symbol'>:to_sym</span><span class='rparen'>)</span><span class='comma'>,</span>
+                                     <span class='label'>let:</span> <span class='id identifier rubyid_all_members'>all_members</span>
 
   <span class='id identifier rubyid_new'>new</span><span class='period'>.</span><span class='id identifier rubyid_tap'>tap</span> <span class='lbrace'>{</span><span class='op'>|</span><span class='id identifier rubyid_instance'>instance</span><span class='op'>|</span>
     <span class='id identifier rubyid_pairs'>pairs</span><span class='period'>.</span><span class='id identifier rubyid_each_pair'>each_pair</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_name'>name</span><span class='comma'>,</span> <span class='id identifier rubyid_value'>value</span><span class='op'>|</span>
@@ -4731,12 +4781,12 @@
       <pre class="lines">
 
 
-8
 9
-10</pre>
+10
+11</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/striuct/classmethods/constructor.rb', line 8</span>
+      <pre class="code"><span class="info file"># File 'lib/striuct/classmethods/constructor.rb', line 9</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_for_values'>for_values</span><span class='lparen'>(</span><span class='op'>*</span><span class='id identifier rubyid_values'>values</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_new_instance'>new_instance</span><span class='lparen'>(</span><span class='op'>*</span><span class='id identifier rubyid_values'>values</span><span class='rparen'>)</span>
@@ -5470,7 +5520,6 @@
       <pre class="lines">
 
 
-92
 93
 94
 95
@@ -5487,10 +5536,11 @@
 106
 107
 108
-109</pre>
+109
+110</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/striuct/classmethods/macro.rb', line 92</span>
+      <pre class="code"><span class="info file"># File 'lib/striuct/classmethods/macro.rb', line 93</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_set_default_value'>set_default_value</span><span class='lparen'>(</span><span class='id identifier rubyid_name'>name</span><span class='comma'>,</span> <span class='id identifier rubyid_value'>value</span><span class='op'>=</span><span class='kw'>nil</span><span class='comma'>,</span> <span class='op'>&amp;</span><span class='id identifier rubyid_block'>block</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_raise'>raise</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>can't modify frozen Class</span><span class='tstring_end'>&quot;</span></span> <span class='kw'>if</span> <span class='id identifier rubyid_frozen?'>frozen?</span>
@@ -6169,9 +6219,9 @@
 </div>
 
     <div id="footer">
-  Generated on Thu Oct 11 01:41:31 2012 by
+  Generated on Mon Oct 22 21:33:05 2012 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
-  0.8.2.1 (ruby-1.9.3).
+  0.8.3 (ruby-1.9.3).
 </div>
 
   </body>

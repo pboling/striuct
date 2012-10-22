@@ -6,7 +6,7 @@
 <title>
   Module: Striuct::InstanceMethods
   
-    &mdash; Documentation by YARD 0.8.2.1
+    &mdash; Documentation by YARD 0.8.3
   
 </title>
 
@@ -87,8 +87,8 @@
   
   
     <dt class="r1 last">Defined in:</dt>
-    <dd class="r1 last">lib/striuct/instancemethods/cast.rb<span class="defines">,<br />
-  lib/striuct/instancemethods/lock.rb,<br /> lib/striuct/instancemethods/to_s.rb,<br /> lib/striuct/instancemethods/enum.rb,<br /> lib/striuct/instancemethods/hashy.rb,<br /> lib/striuct/instancemethods/getter.rb,<br /> lib/striuct/instancemethods/object.rb,<br /> lib/striuct/instancemethods/assign.rb,<br /> lib/striuct/instancemethods/values.rb,<br /> lib/striuct/instancemethods/safety.rb,<br /> lib/striuct/instancemethods/setter.rb,<br /> lib/striuct/instancemethods/compare.rb,<br /> lib/striuct/instancemethods/default.rb,<br /> lib/striuct/instancemethods/validation.rb,<br /> lib/striuct/instancemethods/requirements.rb,<br /> lib/striuct/instancemethods/keyvalidatable.rb,<br /> lib/striuct/instancemethods/delegate_class_methods.rb</span>
+    <dd class="r1 last">lib/striuct/instancemethods/to_s.rb<span class="defines">,<br />
+  lib/striuct/instancemethods/enum.rb,<br /> lib/striuct/instancemethods/lock.rb,<br /> lib/striuct/instancemethods/cast.rb,<br /> lib/striuct/instancemethods/hashy.rb,<br /> lib/striuct/instancemethods/values.rb,<br /> lib/striuct/instancemethods/setter.rb,<br /> lib/striuct/instancemethods/assign.rb,<br /> lib/striuct/instancemethods/object.rb,<br /> lib/striuct/instancemethods/safety.rb,<br /> lib/striuct/instancemethods/getter.rb,<br /> lib/striuct/instancemethods/default.rb,<br /> lib/striuct/instancemethods/compare.rb,<br /> lib/striuct/instancemethods/validation.rb,<br /> lib/striuct/instancemethods/requirements.rb,<br /> lib/striuct/instancemethods/keyvalidatable.rb,<br /> lib/striuct/instancemethods/delegate_class_methods.rb</span>
 </dd>
   
 </dl>
@@ -101,246 +101,6 @@
 
 
 
-  
-    <h2>
-      Cast
-      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
-    </h2>
-
-    <ul class="summary">
-      
-        <li class="public ">
-  <span class="summary_signature">
-    
-      <a href="#to_h-instance_method" title="#to_h (instance method)">- (Hash) <strong>to_h</strong>(include_no_assign = true) </a>
-    
-
-    
-  </span>
-  
-  
-  
-  
-  
-  
-  
-
-  
-    <span class="summary_desc"><div class='inline'></div></span>
-  
-</li>
-
-      
-        <li class="public ">
-  <span class="summary_signature">
-    
-      <a href="#to_striuct-instance_method" title="#to_striuct (instance method)">- (self) <strong>to_striuct</strong> </a>
-    
-
-    
-  </span>
-  
-  
-  
-  
-  
-  
-  
-
-  
-    <span class="summary_desc"><div class='inline'></div></span>
-  
-</li>
-
-      
-        <li class="public ">
-  <span class="summary_signature">
-    
-      <a href="#to_struct-instance_method" title="#to_struct (instance method)">- (Struct) <strong>to_struct</strong> </a>
-    
-
-    
-  </span>
-  
-  
-  
-  
-  
-  
-  
-
-  
-    <span class="summary_desc"><div class='inline'></div></span>
-  
-</li>
-
-      
-        <li class="public ">
-  <span class="summary_signature">
-    
-      <a href="#values-instance_method" title="#values (instance method)">- (Array) <strong>values</strong> </a>
-    
-
-    
-      (also: #to_a)
-    
-  </span>
-  
-  
-  
-  
-  
-  
-  
-
-  
-    <span class="summary_desc"><div class='inline'></div></span>
-  
-</li>
-
-      
-    </ul>
-  
-    <h2>
-      Lock / Unlock
-      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
-    </h2>
-
-    <ul class="summary">
-      
-        <li class="public ">
-  <span class="summary_signature">
-    
-      <a href="#all_locked%3F-instance_method" title="#all_locked? (instance method)">- (Boolean) <strong>all_locked?</strong> </a>
-    
-
-    
-  </span>
-  
-  
-  
-  
-  
-  
-  
-
-  
-    <span class="summary_desc"><div class='inline'></div></span>
-  
-</li>
-
-      
-        <li class="public ">
-  <span class="summary_signature">
-    
-      <a href="#lock-instance_method" title="#lock (instance method)">- (self) <strong>lock</strong>(key) </a>
-    
-
-    
-  </span>
-  
-  
-  
-  
-  
-  
-  
-
-  
-    <span class="summary_desc"><div class='inline'></div></span>
-  
-</li>
-
-      
-        <li class="public ">
-  <span class="summary_signature">
-    
-      <a href="#lock_all-instance_method" title="#lock_all (instance method)">- (self) <strong>lock_all</strong> </a>
-    
-
-    
-  </span>
-  
-  
-  
-  
-  
-  
-  
-
-  
-    <span class="summary_desc"><div class='inline'></div></span>
-  
-</li>
-
-      
-        <li class="public ">
-  <span class="summary_signature">
-    
-      <a href="#locked%3F-instance_method" title="#locked? (instance method)">- (Boolean) <strong>locked?</strong>(key) </a>
-    
-
-    
-  </span>
-  
-  
-  
-  
-  
-  
-  
-
-  
-    <span class="summary_desc"><div class='inline'></div></span>
-  
-</li>
-
-      
-        <li class="private ">
-  <span class="summary_signature">
-    
-      <a href="#unlock-instance_method" title="#unlock (instance method)">- (self) <strong>unlock</strong>(key) </a>
-    
-
-    
-  </span>
-  
-  
-  
-  <span class="note title private">private</span>
-  
-  
-  
-
-  
-    <span class="summary_desc"><div class='inline'></div></span>
-  
-</li>
-
-      
-        <li class="private ">
-  <span class="summary_signature">
-    
-      <a href="#unlock_all-instance_method" title="#unlock_all (instance method)">- (self) <strong>unlock_all</strong> </a>
-    
-
-    
-  </span>
-  
-  
-  
-  <span class="note title private">private</span>
-  
-  
-  
-
-  
-    <span class="summary_desc"><div class='inline'></div></span>
-  
-</li>
-
-      
-    </ul>
   
     <h2>
       To Strings
@@ -548,6 +308,246 @@
 
     
       (also: #each_with_index)
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+    </ul>
+  
+    <h2>
+      Lock / Unlock
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#all_locked%3F-instance_method" title="#all_locked? (instance method)">- (Boolean) <strong>all_locked?</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#lock-instance_method" title="#lock (instance method)">- (self) <strong>lock</strong>(key) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#lock_all-instance_method" title="#lock_all (instance method)">- (self) <strong>lock_all</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#locked%3F-instance_method" title="#locked? (instance method)">- (Boolean) <strong>locked?</strong>(key) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="private ">
+  <span class="summary_signature">
+    
+      <a href="#unlock-instance_method" title="#unlock (instance method)">- (self) <strong>unlock</strong>(key) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  <span class="note title private">private</span>
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="private ">
+  <span class="summary_signature">
+    
+      <a href="#unlock_all-instance_method" title="#unlock_all (instance method)">- (self) <strong>unlock_all</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  <span class="note title private">private</span>
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+    </ul>
+  
+    <h2>
+      Cast
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#to_h-instance_method" title="#to_h (instance method)">- (Hash) <strong>to_h</strong>(include_no_assign = true) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#to_striuct-instance_method" title="#to_striuct (instance method)">- (self) <strong>to_striuct</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#to_struct-instance_method" title="#to_struct (instance method)">- (Struct) <strong>to_struct</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#values-instance_method" title="#values (instance method)">- (Array) <strong>values</strong> </a>
+    
+
+    
+      (also: #to_a)
     
   </span>
   
@@ -806,6 +806,309 @@
     </ul>
   
     <h2>
+      Behavior under Values
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#replace_values-instance_method" title="#replace_values (instance method)">- (self) <strong>replace_values</strong>(*values) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#values_at-instance_method" title="#values_at (instance method)">- (Array) <strong>values_at</strong>(*_keys) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+    </ul>
+  
+    <h2>
+      Setter
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#%5B%5D%3D-instance_method" title="#[]= (instance method)">- (Object) <strong>[]=</strong>(key, value) </a>
+    
+
+    
+      (also: #assign)
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Value.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="private ">
+  <span class="summary_signature">
+    
+      <a href="#_set-instance_method" title="#_set (instance method)">- (Object) <strong>_set</strong>(autonym, value) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  <span class="note title private">private</span>
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Value.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+    <h2>
+      Assign / Unassign
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#assign%3F-instance_method" title="#assign? (instance method)">- (Boolean) <strong>assign?</strong>(key) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#empty%3F-instance_method" title="#empty? (instance method)">- (Boolean) <strong>empty?</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>true if all members are not yet assigned.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#unassign-instance_method" title="#unassign (instance method)">- (Object) <strong>unassign</strong>(key) </a>
+    
+
+    
+      (also: #delete_at)
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Value / nil - value assigned under the key.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+    <h2>
+      Basic Methods for Ruby's Object
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#freeze-instance_method" title="#freeze (instance method)">- (self) <strong>freeze</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#initialize-instance_method" title="#initialize (instance method)">- (InstanceMethods) <strong>initialize</strong>(*values) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>A new instance of InstanceMethods.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="private ">
+  <span class="summary_signature">
+    
+      <a href="#initialize_copy-instance_method" title="#initialize_copy (instance method)">- (Object) <strong>initialize_copy</strong>(original) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  <span class="note title private">private</span>
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+    </ul>
+  
+    <h2>
+      Safety
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#secure%3F-instance_method" title="#secure? (instance method)">- (Boolean) <strong>secure?</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>freezed, fixed familar members, all members passed any condition.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+    <h2>
       Getter
       <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
     </h2>
@@ -905,62 +1208,16 @@
     </ul>
   
     <h2>
-      Basic Methods for Ruby's Object
+      Default Value
       <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
     </h2>
 
     <ul class="summary">
       
-        <li class="public ">
-  <span class="summary_signature">
-    
-      <a href="#freeze-instance_method" title="#freeze (instance method)">- (self) <strong>freeze</strong> </a>
-    
-
-    
-  </span>
-  
-  
-  
-  
-  
-  
-  
-
-  
-    <span class="summary_desc"><div class='inline'></div></span>
-  
-</li>
-
-      
-        <li class="public ">
-  <span class="summary_signature">
-    
-      <a href="#initialize-instance_method" title="#initialize (instance method)">- (InstanceMethods) <strong>initialize</strong>(*values) </a>
-    
-
-    
-  </span>
-  
-  
-  
-  
-  
-  
-  
-
-  
-    <span class="summary_desc"><div class='inline'>
-<p>A new instance of InstanceMethods.</p>
-</div></span>
-  
-</li>
-
-      
         <li class="private ">
   <span class="summary_signature">
     
-      <a href="#initialize_copy-instance_method" title="#initialize_copy (instance method)">- (Object) <strong>initialize_copy</strong>(original) </a>
+      <a href="#_set_defaults-instance_method" title="#_set_defaults (instance method)">- (self) <strong>_set_defaults</strong>(*target_autonyms) </a>
     
 
     
@@ -979,19 +1236,10 @@
 </li>
 
       
-    </ul>
-  
-    <h2>
-      Assign / Unassign
-      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
-    </h2>
-
-    <ul class="summary">
-      
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#assign%3F-instance_method" title="#assign? (instance method)">- (Boolean) <strong>assign?</strong>(key) </a>
+      <a href="#default%3F-instance_method" title="#default? (instance method)">- (Boolean) <strong>default?</strong>(key) </a>
     
 
     
@@ -1006,201 +1254,6 @@
 
   
     <span class="summary_desc"><div class='inline'></div></span>
-  
-</li>
-
-      
-        <li class="public ">
-  <span class="summary_signature">
-    
-      <a href="#empty%3F-instance_method" title="#empty? (instance method)">- (Boolean) <strong>empty?</strong> </a>
-    
-
-    
-  </span>
-  
-  
-  
-  
-  
-  
-  
-
-  
-    <span class="summary_desc"><div class='inline'>
-<p>true if all members are not yet assigned.</p>
-</div></span>
-  
-</li>
-
-      
-        <li class="public ">
-  <span class="summary_signature">
-    
-      <a href="#unassign-instance_method" title="#unassign (instance method)">- (Object) <strong>unassign</strong>(key) </a>
-    
-
-    
-      (also: #delete_at)
-    
-  </span>
-  
-  
-  
-  
-  
-  
-  
-
-  
-    <span class="summary_desc"><div class='inline'>
-<p>Value / nil - value assigned under the key.</p>
-</div></span>
-  
-</li>
-
-      
-    </ul>
-  
-    <h2>
-      Behavior under Values
-      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
-    </h2>
-
-    <ul class="summary">
-      
-        <li class="public ">
-  <span class="summary_signature">
-    
-      <a href="#replace_values-instance_method" title="#replace_values (instance method)">- (self) <strong>replace_values</strong>(*values) </a>
-    
-
-    
-  </span>
-  
-  
-  
-  
-  
-  
-  
-
-  
-    <span class="summary_desc"><div class='inline'></div></span>
-  
-</li>
-
-      
-        <li class="public ">
-  <span class="summary_signature">
-    
-      <a href="#values_at-instance_method" title="#values_at (instance method)">- (Array) <strong>values_at</strong>(*_keys) </a>
-    
-
-    
-  </span>
-  
-  
-  
-  
-  
-  
-  
-
-  
-    <span class="summary_desc"><div class='inline'></div></span>
-  
-</li>
-
-      
-    </ul>
-  
-    <h2>
-      Safety
-      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
-    </h2>
-
-    <ul class="summary">
-      
-        <li class="public ">
-  <span class="summary_signature">
-    
-      <a href="#secure%3F-instance_method" title="#secure? (instance method)">- (Boolean) <strong>secure?</strong> </a>
-    
-
-    
-  </span>
-  
-  
-  
-  
-  
-  
-  
-
-  
-    <span class="summary_desc"><div class='inline'>
-<p>freezed, fixed familar members, all members passed any condition.</p>
-</div></span>
-  
-</li>
-
-      
-    </ul>
-  
-    <h2>
-      Setter
-      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
-    </h2>
-
-    <ul class="summary">
-      
-        <li class="public ">
-  <span class="summary_signature">
-    
-      <a href="#%5B%5D%3D-instance_method" title="#[]= (instance method)">- (Object) <strong>[]=</strong>(key, value) </a>
-    
-
-    
-      (also: #assign)
-    
-  </span>
-  
-  
-  
-  
-  
-  
-  
-
-  
-    <span class="summary_desc"><div class='inline'>
-<p>Value.</p>
-</div></span>
-  
-</li>
-
-      
-        <li class="private ">
-  <span class="summary_signature">
-    
-      <a href="#_set-instance_method" title="#_set (instance method)">- (Object) <strong>_set</strong>(autonym, value) </a>
-    
-
-    
-  </span>
-  
-  
-  
-  <span class="note title private">private</span>
-  
-  
-  
-
-  
-    <span class="summary_desc"><div class='inline'>
-<p>Value.</p>
-</div></span>
   
 </li>
 
@@ -1264,59 +1317,6 @@
   <span class="summary_signature">
     
       <a href="#hash-instance_method" title="#hash (instance method)">- (Integer) <strong>hash</strong> </a>
-    
-
-    
-  </span>
-  
-  
-  
-  
-  
-  
-  
-
-  
-    <span class="summary_desc"><div class='inline'></div></span>
-  
-</li>
-
-      
-    </ul>
-  
-    <h2>
-      Default Value
-      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
-    </h2>
-
-    <ul class="summary">
-      
-        <li class="private ">
-  <span class="summary_signature">
-    
-      <a href="#_set_defaults-instance_method" title="#_set_defaults (instance method)">- (self) <strong>_set_defaults</strong>(*target_autonyms) </a>
-    
-
-    
-  </span>
-  
-  
-  
-  <span class="note title private">private</span>
-  
-  
-  
-
-  
-    <span class="summary_desc"><div class='inline'></div></span>
-  
-</li>
-
-      
-        <li class="public ">
-  <span class="summary_signature">
-    
-      <a href="#default%3F-instance_method" title="#default? (instance method)">- (Boolean) <strong>default?</strong>(key) </a>
     
 
     
@@ -5543,9 +5543,9 @@
 </div>
 
     <div id="footer">
-  Generated on Thu Oct 11 01:41:32 2012 by
+  Generated on Mon Oct 22 21:33:07 2012 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
-  0.8.2.1 (ruby-1.9.3).
+  0.8.3 (ruby-1.9.3).
 </div>
 
   </body>
